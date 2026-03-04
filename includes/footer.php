@@ -1,41 +1,122 @@
 <footer class="bg-dark text-light pt-5">
-    <div class="container">
-        <div class="row">
 
-            <div class="col-md-4 mb-4">
-                <h5>WebMentr</h5>
-                <p>
-                    Professional Web Design, Graphic Design & IT Solutions
-                    helping businesses grow digitally.
-                </p>
-            </div>
+<div class="container">
 
-            <div class="col-md-4 mb-4">
-                <h5>Quick Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
-                    <li><a href="services.html" class="text-light text-decoration-none">Services</a></li>
-                    <li><a href="portfolio.html" class="text-light text-decoration-none">Portfolio</a></li>
-                    <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
-                </ul>
-            </div>
+<div class="row">
 
-            <div class="col-md-4 mb-4">
-                <h5>Contact</h5>
-                <p><i class="fa fa-envelope"></i> info@webmentr.com</p>
-                <p><i class="fa fa-phone"></i> +880-XXXXXXXXXX</p>
-            </div>
+<!-- Company -->
+<div class="col-md-4 mb-4">
 
-        </div>
+<h5 class="fw-bold">WebMentr</h5>
 
-        <hr class="border-secondary">
+<p>
+Professional Web Design, Graphic Design & IT Solutions
+helping businesses grow digitally.
+</p>
 
-        <div class="text-center pb-3">
-            © 2026 WebMentr. All Rights Reserved.
-        </div>
-    </div>
+<!-- Social icons -->
+<div class="mt-3">
+
+<a href="#" class="text-light me-3">
+<i class="fab fa-facebook fa-lg"></i>
+</a>
+
+<a href="#" class="text-light me-3">
+<i class="fab fa-linkedin fa-lg"></i>
+</a>
+
+<a href="#" class="text-light me-3">
+<i class="fab fa-twitter fa-lg"></i>
+</a>
+
+</div>
+
+</div>
+
+
+<!-- Quick Links -->
+<div class="col-md-4 mb-4">
+
+<h5 class="fw-bold">Quick Links</h5>
+
+<ul class="list-unstyled">
+
+<li>
+<a href="about.php" class="text-light text-decoration-none">About</a>
+</li>
+
+<li>
+<a href="services.php" class="text-light text-decoration-none">Services</a>
+</li>
+
+<li>
+<a href="portfolio.php" class="text-light text-decoration-none">Portfolio</a>
+</li>
+
+<li>
+<a href="blog.php" class="text-light text-decoration-none">Blog</a>
+</li>
+
+<li>
+<a href="contact.php" class="text-light text-decoration-none">Contact</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<!-- Contact -->
+<div class="col-md-4 mb-4">
+
+<h5 class="fw-bold">Contact</h5>
+
+<p>
+<i class="fa fa-envelope me-2"></i>
+webmentr@gmail.com
+</p>
+
+<p>
+<i class="fa fa-phone me-2"></i>
++880-1712709909
+</p>
+
+<p>
+<i class="fa fa-location-dot me-2"></i>
+Bangladesh
+</p>
+
+</div>
+
+</div>
+
+
+<hr class="border-secondary">
+
+
+<div class="text-center pb-3">
+
+© <?php echo date("Y"); ?> WebMentr. All Rights Reserved.
+
+</div>
+
+</div>
+
 </footer>
 
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/8801712709909"
+class="whatsapp-float"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
