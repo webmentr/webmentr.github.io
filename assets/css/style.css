@@ -59,6 +59,22 @@ footer{
 footer a{
     color:#ccc;
 }
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+color:white;
+width:55px;
+height:55px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+font-size:28px;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+z-index:999;
+}
 
 /* Mobile */
 
