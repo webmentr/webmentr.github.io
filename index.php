@@ -17,8 +17,10 @@ We help businesses build a strong digital presence with modern,
 secure and scalable websites.
 </p>
 
+<div class="mt-4">
 <a href="services.php" class="btn btn-primary me-2">Our Services</a>
 <a href="contact.php" class="btn btn-outline-dark">Contact Us</a>
+</div>
 
 </div>
 
@@ -27,14 +29,13 @@ secure and scalable websites.
 </div>
 
 </div>
+
 </div>
 </section>
 
 
-
-<!-- SERVICES -->
+<!-- SERVICES SECTION -->
 <section class="py-5">
-
 <div class="container">
 
 <div class="text-center mb-5">
@@ -97,14 +98,11 @@ to keep your business systems running smoothly.
 </div>
 
 </div>
-
 </section>
-
 
 
 <!-- WHY CHOOSE US -->
 <section class="bg-dark text-light py-5">
-
 <div class="container">
 
 <div class="text-center mb-4">
@@ -136,14 +134,11 @@ to keep your business systems running smoothly.
 </div>
 
 </div>
-
 </section>
-
 
 
 <!-- CALL TO ACTION -->
 <section class="py-5 text-center">
-
 <div class="container">
 
 <h2 class="fw-bold">Ready to Grow Your Business?</h2>
@@ -157,7 +152,7 @@ Get Started
 </a>
 
 </div>
-
 </section>
+
 
 <?php include 'includes/footer.php'; ?>
