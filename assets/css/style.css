@@ -30,17 +30,17 @@ body{
 }
 
 /* Services */
-
 .card{
-    border:none;
-    border-radius:10px;
-    transition:0.3s;
+border:none;
+border-radius:12px;
+transition:0.3s;
 }
 
 .card:hover{
-    transform:translateY(-6px);
-    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+transform:translateY(-6px);
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
 }
+
 
 /* Buttons */
 
