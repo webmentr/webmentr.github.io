@@ -1,49 +1,75 @@
-body {
-    font-family: 'Inter', sans-serif;
-    line-height: 1.7;
+/* Global */
+
+body{
+    font-family: 'Inter', Arial, sans-serif;
+    line-height:1.7;
+    color:#333;
 }
 
-.page-header {
-    background: linear-gradient(135deg, #0d6efd, #0a58ca);
-    color: #fff;
-    padding: 80px 0;
+/* Navbar */
+
+.navbar-brand{
+    font-weight:700;
+    font-size:1.4rem;
 }
 
-.navbar-brand {
-    font-size: 1.4rem;
+.navbar{
+    padding:12px 0;
 }
 
-.card {
-    border-radius: 12px;
+/* Hero Section */
+
+.hero{
+    background:#f5f7fb;
+    padding:80px 0;
 }
 
-.btn-primary {
-    border-radius: 30px;
-    padding: 10px 25px;
+.hero h1{
+    font-weight:700;
+    margin-bottom:20px;
 }
 
-footer {
-    font-size: 0.9rem;
+/* Services */
+
+.card{
+    border:none;
+    border-radius:10px;
+    transition:0.3s;
 }
 
-footer a:hover {
-    text-decoration: underline;
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
 }
-@media (max-width: 768px) {
 
-    h1 {
-        font-size: 1.8rem;
-    }
+/* Buttons */
 
-    .page-header {
-        padding: 50px 15px;
-    }
+.btn-primary{
+    padding:10px 25px;
+    border-radius:25px;
+}
 
-    .navbar .btn {
-        margin-top: 10px;
-    }
+/* Footer */
 
-    footer {
-        text-align: center;
-    }
+footer{
+    background:#111;
+    color:#ccc;
+}
+
+footer a{
+    color:#ccc;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.hero{
+padding:50px 15px;
+}
+
+h1{
+font-size:28px;
+}
+
 }
