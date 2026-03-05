@@ -1,0 +1,26 @@
+{
+"projects":[
+
+{
+"title":"Business Website",
+"category":"Corporate Website",
+"description":"Professional company website design project.",
+"link":"case-study-business-website.html"
+},
+
+{
+"title":"Ecommerce Store",
+"category":"Online Store",
+"description":"Modern ecommerce website development.",
+"link":"case-study-ecommerce.html"
+},
+
+{
+"title":"Corporate Website",
+"category":"Business Website",
+"description":"Clean corporate website design.",
+"link":"case-study-corporate-website.html"
+}
+
+]
+}
