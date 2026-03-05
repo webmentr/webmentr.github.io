@@ -1,3 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="max-image-preview:large">
+<title>Why Every Business Needs a Professional Website | WebMentr</title>
+<meta name="description" content="Learn why every business needs a professional website to build trust, attract customers and grow online.">
+<link rel="canonical" href="https://webmentr.com/blog/business-website.html">
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Why Every Business Needs a Professional Website">
+<meta property="og:description" content="Learn why every business needs a professional website to build trust and grow online.">
+<meta property="og:image" content="https://webmentr.com/assets/images/blog/business-website.png">
+<meta property="og:url" content="https://webmentr.com/blog/business-website.html">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why Every Business Needs a Professional Website">
+<meta name="twitter:description" content="Learn why every business needs a professional website to build trust and grow online.">
+<meta name="twitter:image" content="https://webmentr.com/assets/images/blog/business-website.png">
+<!-- BlogPosting Schema -->
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"BlogPosting",
+"headline":"Why Every Business Needs a Professional Website",
+"description":"Learn why every business needs a professional website to build trust and grow online.",
+"url":"https://webmentr.com/blog/business-website.html",
+"image":"https://webmentr.com/assets/images/blog/business-website.png",
+"datePublished":"2026-03-05",
+"dateModified":"2026-03-05",
+"author":{
+"@type":"Organization",
+"name":"WebMentr"
+},
+"publisher":{
+"@type":"Organization",
+"name":"WebMentr",
+"logo":{
+"@type":"ImageObject",
+"url":"https://webmentr.com/assets/images/logo.png"
+}
+}
+}
+</script>
+</head>
+<body>
+<div id="header"></div>
 <div id="header"></div>
 <section class="py-5">
 <div class="container">
@@ -48,3 +96,22 @@ placeholder="Search blog articles...">
 <script src="/assets/js/include.js"></script>
 <script src="/assets/js/blog.js"></script>
 <script src="/assets/js/recent-posts.js"></script>
+
+
+<!-- Reading Time Script -->
+<script>
+const text = document.querySelector(".blog-content").innerText;
+const words = text.trim().split(/\s+/).length;
+const readingTime = Math.ceil(words/200);
+document.getElementById("reading-time").innerText =
+readingTime + " min read";
+</script>
+
+<!-- Share Script -->
+<script>
+const pageUrl = encodeURIComponent(window.location.href);
+document.getElementById("share-facebook")?.setAttribute("href","https://www.facebook.com/sharer/sharer.php?u="+pageUrl);
+document.getElementById("share-twitter")?.setAttribute("href","https://twitter.com/intent/tweet?url="+pageUrl);
+document.getElementById("share-linkedin")?.setAttribute("href","https://www.linkedin.com/sharing/share-offsite/?url="+pageUrl);
+</body>
+</html>
