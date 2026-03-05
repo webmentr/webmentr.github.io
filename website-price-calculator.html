@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Website Price Calculator – WebMentr</title>
+<meta name="description" content="Calculate estimated cost of your website project instantly.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div id="header"></div>
+
+<section class="py-5 bg-light">
+<div class="container text-center">
+<h1 class="fw-bold">
+Website Price Calculator
+</h1>
+<p>
+Select your project requirements and get an estimated price.
+</p>
+</div>
+</section>
+
+<section class="py-5">
+<div class="container">
+<div class="card p-4 shadow-sm">
+<div class="mb-3">
+<label>Number of Pages</label>
+<select id="pages" class="form-control">
+<option value="200">Up to 5 pages</option>
+<option value="400">Up to 10 pages</option>
+<option value="700">15+ pages</option>
+</select>
+</div>
+
+<div class="mb-3">
+<label>Website Type</label>
+<select id="type" class="form-control">
+<option value="200">Business Website</option>
+<option value="500">Ecommerce Website</option>
+<option value="300">Portfolio Website</option>
+</select>
+</div>
+
+<div class="mb-3">
+<label>Extra Features</label>
+<select id="features" class="form-control">
+<option value="0">Basic</option>
+<option value="150">SEO Optimization</option>
+<option value="300">Custom Design</option>
+</select>
+</div>
+
+<button onclick="calculate()" class="btn btn-primary">
+Calculate Price
+</button>
+
+<h3 class="mt-4">
+Estimated Price:
+<span id="price">$0</span>
+</h3>
+
+<a href="contact.html" class="btn btn-success mt-3">
+Request Exact Quote
+</a>
+</div>
+</div>
+</section>
+
+<div id="footer"></div>
+<script src="assets/js/include.js"></script>
+<script>
+function calculate(){
+var pages = parseInt(document.getElementById("pages").value);
+var type = parseInt(document.getElementById("type").value);
+var features = parseInt(document.getElementById("features").value);
+var total = pages + type + features;
+document.getElementById("price").innerText = "$" + total;
+}
+</script>
+</body>
+</html>
