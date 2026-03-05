@@ -1,0 +1,28 @@
+[
+{
+"title":"Why Every Business Needs a Professional Website",
+"url":"/blog/business-website.html",
+"image":"/assets/images/blog/business-website.png",
+"description":"Learn why a professional website helps businesses grow.",
+"category":"Business",
+"date":"2026-03-01"
+},
+
+{
+"title":"Why Responsive Web Design Matters",
+"url":"/blog/responsive-design.html",
+"image":"/assets/images/blog/responsive-design.png",
+"description":"Discover why responsive design improves SEO.",
+"category":"Web Design",
+"date":"2026-03-02"
+},
+
+{
+"title":"How to Build an SEO Friendly Website",
+"url":"/blog/seo-friendly-website.html",
+"image":"/assets/images/blog/seo-friendly.png",
+"description":"Learn how to build SEO optimized websites.",
+"category":"SEO",
+"date":"2026-03-03"
+}
+]
