@@ -4,45 +4,35 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="max-image-preview:large">
-<title>Why Every Business Needs a Professional Website | WebMentr</title>
-<meta name="description" content="Learn why every business needs a professional website to build trust, attract customers and grow online.">
-<link rel="canonical" href="https://webmentr.com/blog/business-website.html">
+<title>WebMentr Blog | Web Design, SEO & Digital Growth Guides</title>
+<meta name="description"
+content="Read WebMentr blog for practical guides about web design, SEO, website performance and digital business growth.">
+<link rel="canonical" href="https://webmentr.com/blog/">
+
 <!-- Open Graph -->
-<meta property="og:type" content="article">
-<meta property="og:title" content="Why Every Business Needs a Professional Website">
-<meta property="og:description" content="Learn why every business needs a professional website to build trust and grow online.">
-<meta property="og:image" content="https://webmentr.com/assets/images/blog/business-website.png">
-<meta property="og:url" content="https://webmentr.com/blog/business-website.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="WebMentr Blog | Web Design & SEO Guides">
+<meta property="og:description" content="Guides and insights about web design, SEO and online business growth.">
+<meta property="og:image" content="https://webmentr.com/assets/images/blog-preview.png">
+<meta property="og:url" content="https://webmentr.com/blog/">
+
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Why Every Business Needs a Professional Website">
-<meta name="twitter:description" content="Learn why every business needs a professional website to build trust and grow online.">
-<meta name="twitter:image" content="https://webmentr.com/assets/images/blog/business-website.png">
-<!-- BlogPosting Schema -->
+<meta name="twitter:title" content="WebMentr Blog | Web Design & SEO Guides">
+<meta name="twitter:description" content="Guides and insights about web design, SEO and digital business growth.">
+<meta name="twitter:image" content="https://webmentr.com/assets/images/blog-preview.png">
+
+<!-- CollectionPage Schema -->
 <script type="application/ld+json">
 {
 "@context":"https://schema.org",
-"@type":"BlogPosting",
-"headline":"Why Every Business Needs a Professional Website",
-"description":"Learn why every business needs a professional website to build trust and grow online.",
-"url":"https://webmentr.com/blog/business-website.html",
-"image":"https://webmentr.com/assets/images/blog/business-website.png",
-"datePublished":"2026-03-05",
-"dateModified":"2026-03-05",
-"author":{
-"@type":"Organization",
-"name":"WebMentr"
-},
-"publisher":{
-"@type":"Organization",
-"name":"WebMentr",
-"logo":{
-"@type":"ImageObject",
-"url":"https://webmentr.com/assets/images/logo.png"
-}
-}
+"@type":"CollectionPage",
+"name":"WebMentr Blog",
+"url":"https://webmentr.com/blog/",
+"description":"WebMentr blog articles about web design, SEO and digital growth."
 }
 </script>
+
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <!-- Bootstrap -->
@@ -52,25 +42,39 @@
 <!-- Custom CSS -->
 <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
 <div id="header"></div>
 
+<main>
+<!-- Breadcrumb -->
+<nav aria-label="breadcrumb" class="container mt-3">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="/">Home</a></li>
+<li class="breadcrumb-item active">Blog</li>
+</ol>
+</nav>
+
 <section class="py-5">
 <div class="container">
-<h1 class="fw-bold mb-4">
+<h1 class="fw-bold mb-3">
 Web Design & Development Blog
 </h1>
-<p class="mb-5">
-Guides and tips about web design, SEO and online business growth.
+<p class="text-muted mb-5">
+Guides, tutorials and insights about web design, SEO,
+website performance and growing your business online.
 </p>
-<div class="row">
+
+<!-- Search + Filter -->
 <div class="row mb-4">
 <div class="col-md-6">
-<input type="text"
+<input
+type="text"
 id="search-input"
 class="form-control"
 placeholder="Search blog articles...">
 </div>
+
 <div class="col-md-6">
 <select id="category-filter" class="form-select">
 <option value="all">All Categories</option>
@@ -80,15 +84,18 @@ placeholder="Search blog articles...">
 </select>
 </div>
 </div>
+
+<div class="row">
 <!-- Blog List -->
 <div class="col-lg-8">
 <div class="row" id="blog-list"></div>
+
 <nav class="mt-4">
 <ul class="pagination justify-content-center" id="pagination"></ul>
 </nav>
 </div>
 
-<!-- SIDEBAR -->
+<!-- Sidebar -->
 <div class="col-lg-4">
 <div class="card p-3 mb-4 shadow-sm">
 <h5 class="fw-bold">
@@ -100,28 +107,12 @@ placeholder="Search blog articles...">
 </div>
 </div>
 </section>
+</main>
+
 <div id="footer"></div>
+
 <script src="../assets/js/include.js"></script>
 <script src="../assets/js/blog.js"></script>
 <script src="../assets/js/recent-posts.js"></script>
-
-
-<!-- Reading Time Script -->
-<script>
-const text = document.querySelector(".blog-content").innerText;
-const words = text.trim().split(/\s+/).length;
-const readingTime = Math.ceil(words/200);
-document.getElementById("reading-time").innerText =
-readingTime + " min read";
-</script>
-
-<!-- Share Script -->
-<script>
-const pageUrl = encodeURIComponent(window.location.href);
-document.getElementById("share-facebook")?.setAttribute("href","https://www.facebook.com/sharer/sharer.php?u="+pageUrl);
-document.getElementById("share-twitter")?.setAttribute("href","https://twitter.com/intent/tweet?url="+pageUrl);
-document.getElementById("share-linkedin")?.setAttribute("href","https://www.linkedin.com/sharing/share-offsite/?url="+pageUrl);
-</script>
 </body>
 </html>
-
