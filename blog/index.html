@@ -1,0 +1,50 @@
+<div id="header"></div>
+<section class="py-5">
+<div class="container">
+<h1 class="fw-bold mb-4">
+Web Design & Development Blog
+</h1>
+<p class="mb-5">
+Guides and tips about web design, SEO and online business growth.
+</p>
+<div class="row">
+<div class="row mb-4">
+<div class="col-md-6">
+<input type="text"
+id="search-input"
+class="form-control"
+placeholder="Search blog articles...">
+</div>
+<div class="col-md-6">
+<select id="category-filter" class="form-select">
+<option value="all">All Categories</option>
+<option value="Web Design">Web Design</option>
+<option value="SEO">SEO</option>
+<option value="Business">Business</option>
+</select>
+</div>
+</div>
+<!-- Blog List -->
+<div class="col-lg-8">
+<div class="row" id="blog-list"></div>
+<nav class="mt-4">
+<ul class="pagination justify-content-center" id="pagination"></ul>
+</nav>
+</div>
+
+<!-- SIDEBAR -->
+<div class="col-lg-4">
+<div class="card p-3 mb-4 shadow-sm">
+<h5 class="fw-bold">
+<i class="fa fa-newspaper"></i> Recent Articles
+</h5>
+<ul class="list-unstyled" id="recent-posts"></ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div id="footer"></div>
+<script src="/assets/js/include.js"></script>
+<script src="/assets/js/blog.js"></script>
+<script src="/assets/js/recent-posts.js"></script>
