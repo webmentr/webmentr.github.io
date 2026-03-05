@@ -17,6 +17,16 @@ padding-bottom: 60px;
 }
 
 /* ===== NAVBAR ===== */
+.navbar .nav-link{
+font-weight:500;
+}
+.navbar .nav-link:hover{
+color:#0d6efd !important;
+}
+.navbar .btn{
+font-weight:600;
+}
+
 .nav-link.active{
 
 font-weight:600;
