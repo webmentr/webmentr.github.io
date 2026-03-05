@@ -132,20 +132,24 @@ color: #fff;
 }
 
 /* ===== WHATSAPP FLOAT ===== */
-.whatsapp-float {
+.whatsapp-float{
 position: fixed;
 bottom: 25px;
 right: 25px;
-background: #25D366;
-color: white;
-font-size: 24px;
-padding: 12px 20px;
-border-radius: 50%;
-box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-z-index: 999;
+background:#25D366;
+color:white;
+width:60px;
+height:60px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:26px;
+border-radius:50%;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+z-index:999;
 }
-.whatsapp-float:hover {
-background: #20b858;
+.whatsapp-float:hover{
+background:#20b858;
 }
 
 /* ===== PAGE HEADER ===== */
