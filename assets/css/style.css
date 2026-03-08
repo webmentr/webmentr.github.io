@@ -65,6 +65,10 @@ width:100%;
 margin-left:.4em;
 vertical-align:.15em;
 }
+.dropdown:hover i {
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
 /* dropdown menu */
 .dropdown-menu{
 border-radius:10px;
