@@ -115,7 +115,7 @@ align-items:center;
 font-size:48px;
 font-weight:700;
 line-height:1.3;
-min-height:110px;
+min-height:120px;
 }
 .hero-text{
 font-size:18px;
@@ -398,15 +398,20 @@ position:relative;
 .navbar .nav-link::after{
 content:"";
 position:absolute;
-left:0;
+left:50%;
 bottom:-6px;
 width:0;
 height:2px;
 background:#0d6efd;
 transition:0.3s;
+transform:translateX(-50%);
 }
+
 .navbar .nav-link:hover::after{
-width:100%;
+width:60%;
+}
+.navbar .nav-link.active::after{
+width:60%;
 }
 /* remove underline for dropdown */
 .navbar .dropdown-toggle::after{
