@@ -529,6 +529,12 @@ const icons = [
 "fa-palette",
 "fa-server"
 ];
+/* new colors */
+const colors = [
+"#0d6efd",   // blue
+"#e83e8c",   // pink
+"#20c997"    // teal
+];
 let index = 0;
 let char = 0;
 function type(){
@@ -551,6 +557,7 @@ if(index >= texts.length) index = 0;
 /* change icon */
 if(iconElement){
 iconElement.className = "fa-solid " + icons[index];
+iconElement.style.color = colors[index];
 }
 setTimeout(type,200);
 }
