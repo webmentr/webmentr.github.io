@@ -112,8 +112,9 @@ HERO SECTION
 min-height:70vh;
  /* white gray bg*/
 /*background:#f8f9fa; white gray bg*/
-  /* Soft Blue Tech Gradient*/
-background: linear-gradient(135deg,#f8fbff 0%, #eef5ff 40%, #e4f0ff 100%);
+ background: linear-gradient(135deg,#f8fbff,#eef4ff);
+  /* Soft Blue Tech Gradient
+background: linear-gradient(135deg,#f8fbff 0%, #eef5ff 40%, #e4f0ff 100%);*/
 /*Modern Startup Gradient
   background: linear-gradient(135deg,#f7faff 0%, #eef2ff 50%, #f0f9ff 100%);*/
   /*Premium Agency Gradient
