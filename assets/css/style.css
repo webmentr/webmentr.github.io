@@ -18,30 +18,89 @@ padding:60px 0;
 img{
 max-width:100%;
 }
-
 /* =================================
 NAVBAR
 ================================= */
 .navbar{
+background:#212529;
 box-shadow:0 2px 8px rgba(0,0,0,0.05);
 }
 .navbar-brand{
 font-size:22px;
+font-weight:700;
 }
+/* nav links */
 .navbar .nav-link{
+color:#ddd;
 font-weight:500;
+padding:8px 14px;
+position:relative;
+transition:0.3s;
 }
+/* hover color */
 .navbar .nav-link:hover{
-color:#0d6efd !important;
+color:#0d6efd;
 }
-.nav-link.active{
+/* active link */
+.navbar .nav-link.active{
+color:#0d6efd !important;
 font-weight:600;
-color:#0d6efd !important;
 }
+/* underline animation */
+.navbar .nav-link::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-6px;
+width:0;
+height:2px;
+background:#0d6efd;
+transition:0.3s ease;
+}
+.navbar .nav-link:hover::after{
+width:100%;
+}
+/* dropdown fix */
+.navbar .dropdown-toggle::after{
+margin-left:.4em;
+vertical-align:.15em;
+}
+/* dropdown menu */
+.dropdown-menu{
+border-radius:10px;
+border:none;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+.dropdown-item{
+padding:10px 16px;
+transition:0.2s;
+}
+.dropdown-item:hover{
+background:#f8f9fa;
+color:#0d6efd;
+}
+/* CTA button */
 .navbar .btn{
 font-weight:600;
+padding:8px 20px;
 }
-
+/* dark toggle button */
+#darkToggle{
+width:42px;
+height:38px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+/* mobile */
+@media (max-width:991px){
+.navbar .nav-link::after{
+display:none;
+}
+.navbar-nav{
+padding-top:10px;
+}
+}
 /* =================================
 HERO SECTION
 ================================= */
@@ -77,7 +136,6 @@ animation:float 3s ease-in-out infinite;
 50%{transform:translateY(-20px);}
 100%{transform:translateY(0);}
 }
-
 /* =================================
 ANIMATIONS
 ================================= */
@@ -90,7 +148,6 @@ transition:0.6s;
 opacity:1;
 transform:translateY(0);
 }
-
 /* =================================
 BUTTONS
 ================================= */
@@ -102,7 +159,6 @@ padding:10px 24px;
 .btn-primary:hover{
 background:#0b5ed7;
 }
-
 /* =================================
 CARDS
 ================================= */
@@ -119,7 +175,6 @@ box-shadow:0 20px 40px rgba(0,0,0,0.15);
 transform:scale(1.05);
 box-shadow:0 20px 40px rgba(0,0,0,0.15);
 }
-
 /* =================================
 CTA SECTION
 ================================= */
@@ -127,7 +182,6 @@ CTA SECTION
 background:#0d6efd;
 padding:80px 0;
 }
-
 /* =================================
 PORTFOLIO
 ================================= */
@@ -140,7 +194,6 @@ transition:0.3s;
 .portfolio-card:hover{
 transform:translateY(-5px);
 }
-
 /* =================================
 TESTIMONIAL
 ================================= */
@@ -151,7 +204,6 @@ font-style:italic;
 display:block;
 margin-top:10px;
 }
-
 /* =================================
 PAGE HEADER
 ================================= */
@@ -161,7 +213,6 @@ background:#f8f9fa;
 .page-header h1{
 font-size:36px;
 }
-
 /* =================================
 FORMS
 ================================= */
@@ -173,7 +224,6 @@ padding:10px;
 box-shadow:none;
 border-color:#0d6efd;
 }
-
 /* =================================
 BLOG
 ================================= */
@@ -183,7 +233,6 @@ transition:0.3s;
 .blog-card:hover{
 transform:translateY(-5px);
 }
-
 /* =================================
 FOOTER
 ================================= */
@@ -200,7 +249,6 @@ color:#bbb;
 footer a:hover{
 color:#fff;
 }
-
 /* =================================
 SOCIAL ICONS
 ================================= */
@@ -212,7 +260,6 @@ color:#bbb;
 .social-icons a:hover{
 color:#fff;
 }
-
 /* =================================
 WHATSAPP FLOAT BUTTON
 ================================= */
@@ -235,7 +282,6 @@ z-index:999;
 .whatsapp-float:hover{
 background:#20b858;
 }
-
 /* =================================
 SOCIAL SHARE BAR
 ================================= */
@@ -258,7 +304,6 @@ background:#0d6efd;
 color:white;
 border-radius:5px;
 }
-
 /* =================================
 PAGE LOADER
 ================================= */
@@ -284,7 +329,6 @@ animation:spin 1s linear infinite;
 0%{transform:rotate(0deg);}
 100%{transform:rotate(360deg);}
 }
-
 /* =================================
 MOBILE
 ================================= */
@@ -348,11 +392,9 @@ transform:scale(1.08);
 position:relative;
 }
 /* navbar underline animation fix */
-
 .navbar .nav-link{
 position:relative;
 }
-
 .navbar .nav-link::after{
 content:"";
 position:absolute;
@@ -363,18 +405,14 @@ height:2px;
 background:#0d6efd;
 transition:0.3s;
 }
-
 .navbar .nav-link:hover::after{
 width:100%;
 }
-
 /* remove underline for dropdown */
-
 .navbar .dropdown-toggle::after{
 border-top:.3em solid;
 margin-left:.4em;
 }
-
 /* ===== PAGE TRANSITION ===== */
 body{
 animation:fadePage 0.4s ease;
