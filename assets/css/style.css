@@ -47,6 +47,7 @@ font-size: 18px;
 color: #666;
 }
 .hero-section{
+  min-height:70vh;
 background:linear-gradient(135deg,#0d6efd,#6610f2);
 padding:120px 0;
 }
@@ -56,7 +57,7 @@ opacity:0.9;
 }
 /* HERO SECTION */
 /*.hero-section{
-min-height:70vh;
+
 background:#f8f9fa;
 }*/
 .hero-title{
