@@ -110,7 +110,18 @@ HERO SECTION
 ================================= */
 .hero-section{
 min-height:70vh;
-background:#f8f9fa;
+ /* white gray bg*/
+/*background:#f8f9fa; white gray bg*/
+  /* Soft Blue Tech Gradient*/
+background: linear-gradient(135deg,#f8fbff 0%, #eef5ff 40%, #e4f0ff 100%);
+/*Modern Startup Gradient
+  background: linear-gradient(135deg,#f7faff 0%, #eef2ff 50%, #f0f9ff 100%);*/
+  /*Premium Agency Gradient
+  background: linear-gradient(120deg,#f8fafc 0%, #e0ecff 100%);*/
+  /*More Attractive Glow Style
+  background: radial-gradient(circle at top right,#e8f1ff,#f8fbff 60%);*/
+  /*background: linear-gradient(135deg,#f8fbff,#eaf2ff);*/
+  /*background: radial-gradient(circle,#dbeafe,transparent 70%);*/
 padding:120px 0;
 display:flex;
 align-items:center;
