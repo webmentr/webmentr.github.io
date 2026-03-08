@@ -18,9 +18,9 @@ padding:60px 0;
 img{
 max-width:100%;
 }
-/* =================================
+/* ================================
 NAVBAR
-================================= */
+================================ */
 .navbar{
 background:#212529;
 box-shadow:0 2px 8px rgba(0,0,0,0.05);
@@ -37,7 +37,6 @@ padding:8px 14px;
 position:relative;
 transition:0.3s;
 }
-/* hover color */
 .navbar .nav-link:hover{
 color:#0d6efd;
 }
@@ -46,7 +45,7 @@ color:#0d6efd;
 color:#0d6efd !important;
 font-weight:600;
 }
-/* underline animation */
+/* underline hover animation */
 .navbar .nav-link::after{
 content:"";
 position:absolute;
@@ -55,29 +54,30 @@ bottom:-6px;
 width:0;
 height:2px;
 background:#0d6efd;
-transition:0.3s ease;
+transition:width .3s ease;
 }
 .navbar .nav-link:hover::after{
 width:100%;
 }
-/* dropdown fix */
-.navbar .dropdown-toggle::after{
-margin-left:.4em;
-vertical-align:.15em;
+/* hide bootstrap default dropdown caret */
+.dropdown-toggle::after{
+display:none;
 }
-.dropdown:hover i {
-  transform: rotate(180deg);
-  transition: 0.3s;
+/* rotate dropdown arrow */
+.dropdown:hover i{
+transform:rotate(180deg);
+transition:.3s;
 }
 /* dropdown menu */
 .dropdown-menu{
-border-radius:10px;
 border:none;
+border-radius:10px;
 box-shadow:0 10px 30px rgba(0,0,0,0.15);
 }
+/* dropdown items */
 .dropdown-item{
 padding:10px 16px;
-transition:0.2s;
+transition:.2s;
 }
 .dropdown-item:hover{
 background:#f8f9fa;
@@ -88,7 +88,7 @@ color:#0d6efd;
 font-weight:600;
 padding:8px 20px;
 }
-/* dark toggle button */
+/* dark mode toggle */
 #darkToggle{
 width:42px;
 height:38px;
@@ -96,7 +96,7 @@ display:flex;
 align-items:center;
 justify-content:center;
 }
-/* mobile */
+/* mobile optimization */
 @media (max-width:991px){
 .navbar .nav-link::after{
 display:none;
