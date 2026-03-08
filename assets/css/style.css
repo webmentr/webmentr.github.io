@@ -15,7 +15,6 @@ section {
 padding-top: 60px;
 padding-bottom: 60px;
 }
-
 /* ===== NAVBAR ===== */
 .navbar .nav-link{
 font-weight:500;
@@ -26,13 +25,9 @@ color:#0d6efd !important;
 .navbar .btn{
 font-weight:600;
 }
-
 .nav-link.active{
-
 font-weight:600;
-
 color:#0d6efd !important;
-
 }
 .navbar {
 box-shadow: 0 2px 8px rgba(0,0,0,0.05);
@@ -40,7 +35,6 @@ box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 .navbar-brand {
 font-size: 22px;
 }
-
 /* ===== HERO ===== */
 .hero {
 background: #f8f9fa;
@@ -56,13 +50,57 @@ color: #666;
 background:linear-gradient(135deg,#0d6efd,#6610f2);
 padding:120px 0;
 }
-
 .hero-icon{
 font-size:140px;
 opacity:0.9;
 }
+/* HERO SECTION */
+.hero-section{
+min-height:70vh;
+background:#f8f9fa;
+}
+.hero-title{
+font-size:48px;
+font-weight:700;
+}
+.hero-text{
+font-size:18px;
+color:#666;
+}
+/* animation */
+#typing{
+border-right:3px solid #0d6efd;
+padding-right:5px;
+}
 
+.hero-animation i{
+font-size:120px;
+color:#0d6efd;
+animation: float 3s ease-in-out infinite;
+}
+@keyframes float{
+0%{
+transform:translateY(0);
+}
+50%{
+transform:translateY(-20px);
+}
+100%{
+transform:translateY(0);
+}
+}
+.fade-up{
+opacity:0;
+transform:translateY(30px);
+animation:fadeUp 1s forwards;
+}
 
+@keyframes fadeUp{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
 
 /* ===== BUTTONS ===== */
 .btn-primary {
@@ -73,29 +111,24 @@ padding: 10px 24px;
 .btn-primary:hover {
 background: #0b5ed7;
 }
-
 /* ===== CARDS ===== */
 .card{
 border:none;
 border-radius:12px;
 transition:0.3s;
 }
-
 .card:hover{
 transform:translateY(-6px);
 box-shadow:0 15px 35px rgba(0,0,0,0.1);
 }
-
 .cta-section{
 background:#0d6efd;
 padding:80px 0;
 }
-
 /* ===== SERVICES ICON ===== */
 .card i {
 margin-bottom: 15px;
 }
-
 /* ===== PORTFOLIO ===== */
 .portfolio-card img {
 border-radius: 8px;
@@ -106,7 +139,6 @@ transition: transform .3s;
 .portfolio-card:hover {
 transform: translateY(-5px);
 }
-
 /* ===== TESTIMONIAL ===== */
 .testimonial {
 font-style: italic;
@@ -115,7 +147,6 @@ font-style: italic;
 display: block;
 margin-top: 10px;
 }
-
 /* ===== FOOTER ===== */
 footer {
 background: #111;
@@ -130,7 +161,6 @@ color: #bbb;
 footer a:hover {
 color: #fff;
 }
-
 /* ===== SOCIAL ICONS ===== */
 .social-icons a {
 margin-right: 10px;
@@ -140,7 +170,6 @@ color: #bbb;
 .social-icons a:hover {
 color: #fff;
 }
-
 /* ===== WHATSAPP FLOAT ===== */
 .whatsapp-float{
 position: fixed;
@@ -153,7 +182,7 @@ height:60px;
 display:flex;
 align-items:center;
 justify-content:center;
-font-size:36px;
+font-size:26px;
 border-radius:50%;
 box-shadow:0 4px 10px rgba(0,0,0,0.2);
 z-index:999;
@@ -161,7 +190,6 @@ z-index:999;
 .whatsapp-float:hover{
 background:#20b858;
 }
-
 /* ===== PAGE HEADER ===== */
 .page-header {
 background: #f8f9fa;
@@ -169,7 +197,6 @@ background: #f8f9fa;
 .page-header h1 {
 font-size: 36px;
 }
-
 /* ===== FORMS ===== */
 .form-control {
 border-radius: 6px;
@@ -179,7 +206,6 @@ padding: 10px;
 box-shadow: none;
 border-color: #0d6efd;
 }
-
 /* ===== BLOG ===== */
 .blog-card {
 transition: 0.3s;
@@ -187,7 +213,6 @@ transition: 0.3s;
 .blog-card:hover {
 transform: translateY(-5px);
 }
-
 /* ===== MOBILE ===== */
 @media (max-width:768px) {
 .hero h1 {
@@ -226,8 +251,6 @@ transition:0.6s;
 opacity:1;
 transform:translateY(0);
 }
-
-
 #loader{
 position:fixed;
 width:100%;
@@ -250,22 +273,18 @@ animation:spin 1s linear infinite;
 0%{transform:rotate(0deg);}
 100%{transform:rotate(360deg);}
 }
-
 .card{
 border:none;
 border-radius:12px;
 transition:0.3s;
 }
-
 .card:hover{
 transform:translateY(-8px);
 box-shadow:0 20px 40px rgba(0,0,0,0.15);
 }
-
 img{
 max-width:100%;
 }
-
 .card.border-primary{
 transform:scale(1.05);
 box-shadow:0 20px 40px rgba(0,0,0,0.15);
