@@ -347,19 +347,34 @@ transform:scale(1.08);
 .navbar .nav-link{
 position:relative;
 }
+/* navbar underline animation fix */
+
+.navbar .nav-link{
+position:relative;
+}
+
 .navbar .nav-link::after{
 content:"";
 position:absolute;
 left:0;
-bottom:-4px;
-width:0%;
+bottom:-6px;
+width:0;
 height:2px;
 background:#0d6efd;
 transition:0.3s;
 }
+
 .navbar .nav-link:hover::after{
 width:100%;
 }
+
+/* remove underline for dropdown */
+
+.navbar .dropdown-toggle::after{
+border-top:.3em solid;
+margin-left:.4em;
+}
+
 /* ===== PAGE TRANSITION ===== */
 body{
 animation:fadePage 0.4s ease;
