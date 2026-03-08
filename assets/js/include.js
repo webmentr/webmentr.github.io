@@ -5,12 +5,19 @@ fetch("/includes/header.html")
 .then(data => {
 document.getElementById("header").innerHTML = data;
 /* Active menu highlight */
-const currentPage = location.pathname.split("/").pop();
+const path = window.location.pathname;
 document.querySelectorAll(".nav-link").forEach(link => {
-if(link.getAttribute("href") === "/" && currentPage === ""){
+const href = link.getAttribute("href");
+/* Home */
+if (path === "/" && href === "/") {
 link.classList.add("active");
 }
-if(link.getAttribute("href").includes(currentPage)){
+/* Blog folder + blog posts */
+else if (path.startsWith("/blog") && href === "/blog/") {
+link.classList.add("active");
+}
+/* Other pages */
+else if (href !== "/" && href !== "/blog/" && path === href) {
 link.classList.add("active");
 }
 });
@@ -24,7 +31,6 @@ fetch("/includes/footer.html")
 document.getElementById("footer").innerHTML = data;
 });
 });
-
 /* DARK MODE FUNCTION */
 function initDarkMode(){
 const toggle = document.getElementById("darkToggle");
