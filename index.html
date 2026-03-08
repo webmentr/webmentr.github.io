@@ -517,11 +517,17 @@ Start Your Project
 <script>
 document.addEventListener("DOMContentLoaded", function(){
 const typingElement = document.getElementById("typing");
+const iconElement = document.getElementById("heroIcon");
 if(!typingElement) return;
 const texts = [
 "Professional Web Design",
 "Creative Graphic Design",
 "Reliable IT Solutions"
+];
+const icons = [
+"fa-laptop-code",
+"fa-palette",
+"fa-server"
 ];
 let index = 0;
 let char = 0;
@@ -542,6 +548,10 @@ setTimeout(erase,40);
 }else{
 index++;
 if(index >= texts.length) index = 0;
+/* change icon */
+if(iconElement){
+iconElement.className = "fa-solid " + icons[index];
+}
 setTimeout(type,200);
 }
 }
