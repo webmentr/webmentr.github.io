@@ -1,217 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <title>Contact Us – WebMentr</title>
-
 <meta name="description" content="Contact WebMentr for professional web design, graphic design and IT solutions.">
 <meta name="keywords" content="contact webmentr, web design support, graphic design services">
 <meta name="author" content="WebMentr">
-
 <link rel="canonical" href="https://webmentr.com/contact.html">
-
 <!-- Open Graph -->
 <meta property="og:title" content="Contact WebMentr">
 <meta property="og:description" content="Let’s discuss your project with WebMentr.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://webmentr.com/contact.html">
-
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
 <!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
 <!-- Font Awesome -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-
 <!-- Custom CSS -->
 <link rel="stylesheet" href="assets/css/style.css">
-
 </head>
 
-
 <body>
-
 <div id="header"></div>
-
 
 <!-- PAGE HEADER -->
 <section class="page-header text-center py-5 bg-light">
-
 <div class="container">
-
 <h1 class="fw-bold">Contact Us</h1>
-
 <p class="text-muted">
 Let’s discuss your project and build something amazing together.
 </p>
-
 </div>
-
 </section>
-
 
 <!-- CONTACT SECTION -->
 <section class="py-5">
-
 <div class="container">
-
 <div class="row g-5">
-
 <!-- CONTACT INFO -->
 <div class="col-lg-4">
-
 <div class="card border-0 shadow-sm p-4">
-
 <h4 class="fw-bold mb-4">Get in Touch</h4>
-
 <p class="mb-3">
 <i class="fa fa-envelope text-primary me-2"></i>
 <a href="mailto:webmentr@gmail.com">webmentr@gmail.com</a>
 </p>
-
 <p class="mb-3">
 <i class="fa fa-phone text-primary me-2"></i>
 +880-1712709909
 </p>
-
 <p class="mb-3">
 <i class="fa fa-location-dot text-primary me-2"></i>
 Bangladesh
 </p>
-
 <p class="mb-0">
 <i class="fab fa-whatsapp text-success me-2"></i>
 <a href="https://wa.me/8801712709909" target="_blank">Chat on WhatsApp</a>
 </p>
-
 </div>
-
 </div>
-
 
 <!-- CONTACT FORM -->
 <div class="col-lg-8">
-
 <div class="card border-0 shadow-sm p-4">
-
 <h4 class="fw-bold mb-4">Send a Message</h4>
-
 <form id="contact-form" class="card p-4 shadow-sm">
-
+<input type="text" name="honeypot" style="display:none">
 <div class="row">
-
 <div class="col-md-6 mb-3">
 <input type="text" name="name" class="form-control" placeholder="Your Name" required>
 </div>
-
 <div class="col-md-6 mb-3">
 <input type="email" name="email" class="form-control" placeholder="Your Email" required>
 </div>
-
 </div>
-
 <div class="mb-3">
 <input type="text" name="subject" class="form-control" placeholder="Subject">
 </div>
-
 <div class="mb-3">
 <textarea name="message" rows="5" class="form-control" placeholder="Your Message" required></textarea>
 </div>
-
 <button type="submit" class="btn btn-primary px-4">
 Send Message
 </button>
-
 <div id="form-status" class="mt-3"></div>
-
 </form>
-
 </div>
-
 </div>
-
 </div>
-
 </div>
-
-</section>
-<section class="py-5 bg-light">
-
-<div class="container">
-
-<h2 class="fw-bold text-center mb-4">
-Request a Free Website Consultation
-</h2>
-
-<form action="https://formspree.io/f/xwvngrnp" method="POST">
-
-<div class="row">
-
-<div class="col-md-6 mb-3">
-<input type="text" name="name" class="form-control" placeholder="Your Name" required>
-</div>
-
-<div class="col-md-6 mb-3">
-<input type="email" name="email" class="form-control" placeholder="Your Email" required>
-</div>
-
-</div>
-
-<div class="mb-3">
-<textarea name="message" class="form-control" rows="4" placeholder="Tell us about your project"></textarea>
-</div>
-
-<button class="btn btn-primary">
-Request Consultation
-</button>
-
-</form>
-
-</div>
-
 </section>
 
 <div id="footer"></div>
-
-<script src="assets/js/include.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script>
 const form = document.getElementById("contact-form");
 const status = document.getElementById("form-status");
-
-form.addEventListener("submit", async function(e) {
+form.addEventListener("submit", async function(e){
 e.preventDefault();
-
-const data = new FormData(form);
-
-try {
-const response = await fetch("https://formspree.io/f/xwvngrnp", {
-method: "POST",
-body: data,
-headers: {
-'Accept': 'application/json'
-}
+status.innerHTML =
+"<div class='alert alert-info'>Sending message...</div>";
+const formData = new FormData(form);
+try{
+const response = await fetch(
+"https://script.google.com/macros/s/AKfycbz4CD6ZCklEqubPncABnixAelST1RQm1pn87r57279zuxPHsiEgJiRaFesWAOarJJBnGw/exec",
+{
+method:"POST",
+body:formData
 });
-
-if (response.ok) {
-status.innerHTML = "<div class='alert alert-success'>✅ Message sent successfully! We will contact you soon.</div>";
+status.innerHTML =
+"<div class='alert alert-success'>✅ Message sent successfully! We will contact you soon.</div>";
 form.reset();
-} else {
-status.innerHTML = "<div class='alert alert-danger'>❌ Something went wrong. Please try again.</div>";
-}
-
-} catch (error) {
-status.innerHTML = "<div class='alert alert-danger'>❌ Network error. Please try later.</div>";
+}catch(err){
+status.innerHTML =
+"<div class='alert alert-danger'>❌ Failed to send message.</div>";
 }
 });
 </script>
 </body>
-
 </html>
