@@ -518,3 +518,38 @@ background:#2563eb;
 .client-logo img:hover{
     opacity: 1;
 }
+
+.logo-marquee {
+overflow: hidden;
+position: relative;
+width: 100%;
+}
+
+.logo-track {
+display: flex;
+width: max-content;
+animation: scrollLogos 35s linear infinite;
+}
+
+.logo-track img {
+height: 60px;
+margin: 0 40px;
+opacity: 0.7;
+transition: opacity 0.3s;
+}
+
+.logo-track img:hover {
+opacity: 1;
+}
+
+@keyframes scrollLogos {
+0% {
+transform: translateX(0);
+}
+100% {
+transform: translateX(-50%);
+}
+}
+.logo-marquee:hover .logo-track{
+animation-play-state: paused;
+}
